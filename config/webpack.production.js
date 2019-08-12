@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtrctPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const merge = require('webpack-merge');
 const { DefinePlugin } = require('webpack');
@@ -27,6 +28,18 @@ module.exports = merge(common, {
     filename: 'js/[name].[chunkhash:6].js',
     publicPath: ''
   },
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        use: [
+          MiniCssExtrctPlugin.loader,
+          'css-loader',
+          'sass-loader'
+        ]
+      }
+    ]
+  },
   plugins: [
     new DefinePlugin({
       'process.env': {
@@ -34,6 +47,10 @@ module.exports = merge(common, {
         APP_ENV: JSON.stringify('production'),
         SETTINGS: JSON.stringify(settings.production)
       },
+    }),
+    new MiniCssExtrctPlugin({
+      chunkFilename: 'css/[name].[chunkhash:6].css',
+      filename: 'css/[name].[chunkhash:6].css',
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
