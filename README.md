@@ -18,4 +18,4 @@ Builds the app with staging credentials and ENV.
 Builds the app with production credentials and ENV.
 
 The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deploye!
+Your app is ready to be deployed!
