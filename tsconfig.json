@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "rootDir": "src",
+    "baseUrl": "./src",
+  },
+  "paths": {
+    "src/*": [""],
+    "assets/*": ["assets/*"],
+    "components/*": ["components/*"],
+    "configs/*": ["configs/*"],
+    "HOCs/*": ["HOCs/*"],
+    "networking/*": ["networking/*"],
+    "styles/*": ["styled/*"],
+    "utils/*": ["utils/*"]
+  },
+  "files": ["custom.d.ts"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "config"],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "isolatedModules": true,
+    "reportFiles": ["src/**/*.{ts,tsx}"]
+  }
+}
