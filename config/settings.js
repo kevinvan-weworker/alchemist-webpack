@@ -1,3 +1,5 @@
+// used for public-facing env
+
 module.exports = {
   development: {
     APP_NAME: 'alchemist-dev'

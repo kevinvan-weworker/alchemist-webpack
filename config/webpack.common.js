@@ -39,7 +39,7 @@ module.exports = {
         loader: 'source-map-loader'
       },
       {
-        test: /\.(s*)css$/,
+        test: /\.s?css$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
@@ -49,17 +49,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  // plugins: [
-  //   new CleanWebpackPlugin({
-  //     cleanOnceBeforeBuildPatterns: [
-  //       '**/*',
-  //       path.join(process.cwd(), 'build/**/*')
-  //     ]
-  //   })
-  // ]
-  // externals: {
-  //   'react': 'React',
-  //   'react-dom': 'ReactDOM'
-  // }
+  }
 }

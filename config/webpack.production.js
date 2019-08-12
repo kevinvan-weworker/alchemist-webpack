@@ -21,6 +21,7 @@ const commonHtmlWebpackOpts = {
 
 module.exports = merge(common, {
   mode: 'production',
+  devtool: 'source-map',
   output: {
     chunkFilename: 'js/[name].[chunkhash:6].js',
     filename: 'js/[name].[chunkhash:6].js',

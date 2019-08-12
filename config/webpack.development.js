@@ -9,6 +9,7 @@ const root = path.resolve(__dirname, '..', 'src');
 
 module.exports = merge(common, {
   mode: 'development',
+  devtool: 'inline-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, '..', 'dist'),
     port: 1337,
@@ -34,6 +35,5 @@ module.exports = merge(common, {
       template: `${root}/templates/index.development.html`,
     }),
     new HotModuleReplacementPlugin()
-  ],
-  devtool: 'source-map'
+  ]
 });   
