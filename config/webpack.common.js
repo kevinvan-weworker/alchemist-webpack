@@ -9,6 +9,23 @@ module.exports = {
     path: path.resolve(__dirname, '..', 'dist'),
     pathinfo: false,
   },
+  optimization: {
+    runtimeChunk: {
+      name: 'manifest',
+    },
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        commons: {
+          test: /node_modules/,
+          chunks: 'all',
+          name: 'vendor',
+          minChunks: 2,
+          minSize: 1,
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       assets: `${root}/assets`,
