@@ -63,11 +63,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: [
-        '**/*',
-        path.join(process.cwd(), 'build/**/*')
-      ]
-    })
+    new CleanWebpackPlugin()
   ]
 }
