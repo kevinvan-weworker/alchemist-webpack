@@ -6,7 +6,7 @@ const root = path.resolve(__dirname, '..', 'src');
 module.exports = {
   entry: `${root}/index.tsx`,
   output: {
-    path: path.resolve(__dirname, '..', 'dist'),
+    path: path.resolve(__dirname, '..', 'build'),
     pathinfo: false,
   },
   optimization: {

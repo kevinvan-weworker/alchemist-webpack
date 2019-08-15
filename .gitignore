@@ -1,40 +1,43 @@
 # compiled output
-/dist
-/tmp
-/out-tsc
+app/build
+build
+app/tmp
+tmp
+app/out-tsc
+out-tsc
 
 # dependencies
-/node_modules
+app/node_modules
+node_modules
 
-# cache
+# aws
+app/.awcache
 .awcache
 
-# jest cache
-.jestcache
-
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# jest cache
-.jestcache
+app/.idea
+./idea
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
+app/.sass-cache
+.sass-cache
+app/connect.lock
+connect.lock
+app/coverage
+coverage
+app/libpeerconnection.log
+libpeerconnection.log
+app/npm-debug.log
 npm-debug.log
+app/testem.log
 testem.log
 
 # System Files
 .DS_Store
+app/.DS_Store
 Thumbs.db
+app/Thumbs.db
 
 # env
+app/.env
 .env

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "./build/",
     "sourceMap": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -25,7 +25,7 @@
   },
   "files": ["custom.d.ts"],
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "config"],
+  "exclude": ["node_modules", "build", "config"],
   "awesomeTypescriptLoaderOptions": {
     "useCache": true,
     "isolatedModules": true,
