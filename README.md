@@ -13,7 +13,7 @@ The page will reload if you make edits.<br>
 
 Builds the app with staging credentials and ENV.
 
-### `npm run prod`
+### `npm run build`
 
 Builds the app with production credentials and ENV.
 
